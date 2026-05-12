@@ -3,14 +3,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: './',
+  base: '/prj-sub-cs-ninquihue-001/',
   plugins: [react()],
   server: {
     port: 3000,
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   build: {
